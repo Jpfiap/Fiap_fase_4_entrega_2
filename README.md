@@ -1,7 +1,7 @@
 
 # Sistema de Monitoramento Agrícola
 
-Este projeto simula o monitoramento de culturas agrícolas utilizando sensores com ESP32, armazenamento em banco de dados PostgreSQL e manipulação via Python. É a segunda entrega do projeto da equipe FarmTech Solutions, desenvolvida para a disciplina de IoT e Banco de Dados.
+Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensores ESP32 e banco de dados PostgreSQL.
 
 ## Equipe
 - [Gabriel] (RM: [rm564934])
