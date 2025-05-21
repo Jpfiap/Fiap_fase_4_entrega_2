@@ -2,6 +2,13 @@
 
 Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensores ESP32 e banco de dados PostgreSQL.
 
+## Equipe
+- [Gabriel] (RM: [rm564934])
+- [Gabriella Serni Ponzetta] (RM: [rm566296])
+- [João Pedro Abreu] (RM: [RM563261])
+- [Fernando Ricardo] (RM: [rm566501])
+- [João Francisco Maciel Albano] (RM: 565985)
+
 ## Estrutura do Projeto
 
 ```
