@@ -40,7 +40,7 @@ Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensor
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_REPOSITORIO]](https://github.com/fernandodevgama/Fiap_fase_3_entrega_2.git
+git clone https://github.com/fernandodevgama/Fiap_fase_3_entrega_2.git
 cd Fiap_fase_3_entrega_2
 ```
 
