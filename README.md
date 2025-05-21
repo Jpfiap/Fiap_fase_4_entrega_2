@@ -1,3 +1,4 @@
+
 # Sistema de Monitoramento Agrícola
 
 Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensores ESP32 e banco de dados PostgreSQL.
@@ -59,19 +60,29 @@ pip install -r requirements.txt
 python scripts/migrate.py
 ```
 
-5. Importe os dados iniciais (opcional):
+5. Importe os dados da planilha CSV:
 ```bash
 python scripts/import_data.py
 ```
-Este script permite importar dados de uma planilha Excel para o banco de dados. A planilha deve estar localizada na pasta `scripts/` e deve conter as seguintes colunas:
-- Nome da cultura
-- Tipo da cultura
-- Data de plantio
-- Data prevista de colheita
-- Necessidades de água (mín e máx)
-- Necessidades de pH (mín e máx)
-- Necessidades de fósforo (mín e máx)
-- Necessidades de potássio (mín e máx)
+Este script importará automaticamente os dados do arquivo `dados_culturas.csv` que está localizado na pasta `scripts/`. O arquivo CSV deve conter as seguintes colunas:
+- nome: Nome da cultura
+- tipo: Tipo da cultura
+- data_plantio: Data de plantio (formato: YYYY-MM-DD)
+- data_colheita_prevista: Data prevista para colheita (formato: YYYY-MM-DD)
+- necessidade_agua_min: Necessidade mínima de água (%)
+- necessidade_agua_max: Necessidade máxima de água (%)
+- necessidade_ph_min: pH mínimo
+- necessidade_ph_max: pH máximo
+- necessidade_fosforo_min: Fósforo mínimo (g/m²)
+- necessidade_fosforo_max: Fósforo máximo (g/m²)
+- necessidade_potassio_min: Potássio mínimo (g/m²)
+- necessidade_potassio_max: Potássio máximo (g/m²)
+
+O script irá:
+1. Ler o arquivo CSV
+2. Validar os dados
+3. Inserir os registros na tabela `cultura`
+4. Exibir um relatório com o número de registros importados
 
 ## Uso
 
@@ -208,3 +219,4 @@ python src/cli.py
 ## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
+
