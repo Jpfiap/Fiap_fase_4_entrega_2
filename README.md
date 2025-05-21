@@ -1,7 +1,7 @@
 
 # Sistema de Monitoramento Agrícola
 
-Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensores ESP32 e banco de dados PostgreSQL.
+Este projeto simula o monitoramento de culturas agrícolas utilizando sensores com ESP32, armazenamento em banco de dados PostgreSQL e manipulação via Python. É a segunda entrega do projeto da equipe FarmTech Solutions, desenvolvida para a disciplina de IoT e Banco de Dados.
 
 ## Equipe
 - [Gabriel] (RM: [rm564934])
@@ -16,14 +16,12 @@ Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensor
 .
 ├── config/
 │   ├── database_config.py    # Configurações do banco de dados
-│   └── esp32_config.py       # Configurações do ESP32
 ├── scripts/
 │   ├── migrate.py           # Script de migração do banco
 │   └── import_data.py       # Script de importação de dados
 ├── src/
 │   ├── cli.py              # Interface de linha de comando
 │   ├── database.py         # Gerenciador do banco de dados
-│   └── esp32.py            # Código do ESP32
 └── README.md
 ```
 
@@ -42,8 +40,8 @@ Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensor
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_REPOSITORIO]
-cd [NOME_DO_DIRETORIO]
+git clone [URL_DO_REPOSITORIO]](https://github.com/fernandodevgama/Fiap_fase_3_entrega_2.git
+cd Fiap_fase_3_entrega_2
 ```
 
 2. Instale as dependências:
