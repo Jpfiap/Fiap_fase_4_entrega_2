@@ -2,13 +2,6 @@
 
 Sistema desenvolvido para monitoramento de culturas agrícolas utilizando sensores ESP32 e banco de dados PostgreSQL.
 
-## Equipe
-- [Gabriel] (RM: [rm564934])
-- [Gabriella Serni Ponzetta] (RM: [rm566296])
-- [João Pedro Abreu] (RM: [RM563261])
-- [Fernando Ricardo] (RM: [rm566501])
-- [João Francisco Maciel Albano] (RM: 565985)
-
 ## Estrutura do Projeto
 
 ```
@@ -58,6 +51,20 @@ pip install -r requirements.txt
 ```bash
 python scripts/migrate.py
 ```
+
+5. Importe os dados iniciais (opcional):
+```bash
+python scripts/import_data.py
+```
+Este script permite importar dados de uma planilha Excel para o banco de dados. A planilha deve estar localizada na pasta `scripts/` e deve conter as seguintes colunas:
+- Nome da cultura
+- Tipo da cultura
+- Data de plantio
+- Data prevista de colheita
+- Necessidades de água (mín e máx)
+- Necessidades de pH (mín e máx)
+- Necessidades de fósforo (mín e máx)
+- Necessidades de potássio (mín e máx)
 
 ## Uso
 
